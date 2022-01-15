@@ -69,8 +69,8 @@ const FormularioTarea = () =>{
   return(
     <form
       onSubmit = {onSubmit}
-    className="flex flex-col items-center p-8 bg-gray-900">
-      <div className="flex flex-col w-6/12">
+    className="flex flex-col w-full items-center p-8 bg-gray-900">
+      <div className="flex flex-col w-full md:w-6/12">
         <input
           onChange={handleChange}
           value={nombre}

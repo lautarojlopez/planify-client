@@ -45,12 +45,12 @@ const ListadoTareas = () => {
   }
 
   return(
-    <div className="my-5">
+    <div className="h-screen md:h-auto my-5">
       <h2 className="text-3xl">Proyecto: {proyectoActual.nombre}</h2>
       <ul className="flex flex-col items-center">
         {
           tareasproyecto.length === 0
-          ? <li><p>No has añadido tareas aún</p></li>
+          ? <li><p className="text-center py-5">No has añadido tareas aún</p></li>
           : tareasproyecto.map( (tarea) => (
             <Tarea
               key = {tarea._id}
@@ -62,7 +62,7 @@ const ListadoTareas = () => {
       <div className="flex justify-center">
         <button
           onClick={onClickDelete}
-          className="w-3/12 p-2 bg-red-800 text-white text-xl mt-3 border-b-4 border-red-900 rounded hover:border-red-800 hover:bg-red-700 transition-all duration-150 ease-linear">
+          className="w-10/12 md:w-3/12 p-2 bg-red-800 text-white text-xl mt-3 border-b-4 border-red-900 rounded hover:border-red-800 hover:bg-red-700 transition-all duration-150 ease-linear">
           Eliminar Proyecto <i className="fas fa-trash-alt"></i>
         </button>
       </div>

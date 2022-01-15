@@ -56,7 +56,7 @@ const Tarea = ({ tarea }) => {
   };
 
   return (
-    <div className="w-8/12 p-4 my-2 rounded shadow-md bg-gray-100">
+    <div className="w-10/12 md:w-8/12 p-4 my-2 rounded shadow-md bg-gray-100">
       <div className="flex justify-between items-center">
         <p className="">{nombre}</p>
         <div className="">

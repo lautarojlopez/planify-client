@@ -54,7 +54,7 @@ const NuevoProyecto = () =>{
         </button>
 
         <form
-          className={`${formulario ? "visible opacity-100" : "invisible opacity-0"} transition-all ease-in-out duration-200`}
+          className={`${formulario ? "block" : "hidden"} transition-all ease-in-out duration-200`}
           onSubmit={onSubmitProyecto}
           >
           <input

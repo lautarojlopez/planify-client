@@ -15,7 +15,7 @@ const ListadoProyectos = () =>{
 
   //Revisar si hay proyectos
   if(proyectos.length === 0){
-    return <p className="mt-1">No tienen ningun proyecto aún.</p>
+    return <p className="mt-1 text-center">No tienen ningun proyecto aún.</p>
   }
 
   return(
